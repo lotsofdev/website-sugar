@@ -28,8 +28,8 @@ This function will exclude the characters like the html tags like &lt;red&gt;, e
 <p class="_description">The line to count</p>
 </li>
 <li class="_item">
-<span class="_name">count</span><span class="_default">[object Object]</span> <span class="_type">Object</span>
-<p class="_description">Specify what you want to count outside of the normal characters of yourse. Here's the list of available options:</p>
+<span class="_name">count</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Object</span>
+<p class="_description">Specify what you want to count outside of the normal characters of yourse&period; Here&apos;s the list of available options&colon;</p>
 </li>
 </ol>
 </div>
@@ -50,9 +50,20 @@ import { __countLineChars } from '@lotsof/sugar/string';
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">htmlTags</span><span class="_default">false</span> <span class="_type">Boolean</span>
-2. <span class="_name">terminalSpecialChars</span><span class="_default">false</span> <span class="_type">Boolean</span>
-3. <span class="_name">newLineChars</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">htmlTags</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to count the html tags or not</p>
+</li>
+<li class="_item">
+<span class="_name">terminalSpecialChars</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to count the terminal specials chars like "\u001b[30m", etc...</p>
+</li>
+<li class="_item">
+<span class="_name">newLineChars</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to count the new line special char "\n" or not</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

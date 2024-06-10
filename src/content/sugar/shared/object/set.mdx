@@ -28,7 +28,7 @@ If the path parameter is set to &#39;.&#39;, it will act like an `Object.assign(
 <p class="_description">The object in which to set the value</p>
 </li>
 <li class="_item">
-<span class="_name">path<span class="_required">*</span></span><span class="_default"></span> <span class="_type">String|String[]</span>
+<span class="_name">path<span class="_required">*</span></span><span class="_default"></span> <span class="_type">String&vert;String&lsqb;&rsqb;</span>
 <p class="_description">The object path where to set the value</p>
 </li>
 <li class="_item">
@@ -54,7 +54,12 @@ import { __set } from '@lotsof/sugar/object';
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">preferAssign</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">preferAssign</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you prefer using Object.assign rather than = for objects to keep references</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

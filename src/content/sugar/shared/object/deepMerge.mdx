@@ -31,8 +31,8 @@ Note that by default the resulting object is a clone and do not have the same re
 <p class="_description">Pass all the objects you want to merge</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IDeepMergeSettings</span>
-<p class="_description">Pass as last object the settings one that can contain these properties:</p>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IDeepMergeSettings</span>
+<p class="_description">Pass as last object the settings one that can contain these properties&colon;</p>
 </li>
 </ol>
 </div>
@@ -54,8 +54,16 @@ __deepMerge({a: {b: {c: 'c', d: 'd'}}}, {a: {b: {e: 'e', f: 'f'}}});
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">array</span><span class="_default">false</span> <span class="_type">Boolean</span>
-2. <span class="_name">clone</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">array</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Merge or not arrays</p>
+</li>
+<li class="_item">
+<span class="_name">clone</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want the result object to be a clone or the same first passed object</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

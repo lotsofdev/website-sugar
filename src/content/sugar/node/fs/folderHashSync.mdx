@@ -29,7 +29,7 @@ has not been updated...
 <p class="_description">The folder path you want to get the hash back</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IFolderHashSettings</span>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IFolderHashSettings</span>
 <p class="_description">Some settings to configure your hash generation process</p>
 </li>
 </ol>
@@ -51,9 +51,20 @@ __folderHashSync('my/cool/folder'); // => YZOrKDx9LCLd8X39PoFTflXGpRU=,
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">recursive</span><span class="_default">true</span> <span class="_type">Boolean</span>
-2. <span class="_name">algo</span><span class="_default">sha356</span> <span class="_type">String</span>
-3. <span class="_name">digest</span><span class="_default">base64</span> <span class="_type">BinaryToTextEncoding</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">recursive</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to generate a hash using also the children or not</p>
+</li>
+<li class="_item">
+<span class="_name">algo</span><span class="_default">sha356</span> <span class="_type">String</span>
+<p class="_description">The algorithm to use</p>
+</li>
+<li class="_item">
+<span class="_name">digest</span><span class="_default">base64</span> <span class="_type">BinaryToTextEncoding</span>
+<p class="_description">How to digest the hash</p>
+</li>
+</ol>
 </div>
 <div class="_author">
 ## Author

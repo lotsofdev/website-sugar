@@ -24,12 +24,12 @@ author: '{"name":"Olivier Bossel","email":"olivier.bossel@gmail.com","url":"http
 <p class="_description">The element to listen on</p>
 </li>
 <li class="_item">
-<span class="_name">trigger<span class="_required">*</span></span><span class="_default"></span> <span class="_type">String|String[]</span>
-<p class="_description">The trigger(s) to listen on</p>
+<span class="_name">trigger<span class="_required">*</span></span><span class="_default"></span> <span class="_type">String&vert;String&lsqb;&rsqb;</span>
+<p class="_description">The trigger&lpar;s&rpar; to listen on</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IwhenSettings</span>
-<p class="_description">Some settings like offset, etc...</p>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IwhenSettings</span>
+<p class="_description">Some settings like offset&comma; etc&period;&period;&period;</p>
 </li>
 </ol>
 </div>
@@ -56,13 +56,36 @@ __when($elm, 'inViewport', {
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">whenInViewport</span><span class="_default">[object Object]</span> <span class="_type">Partial&lt;IWhenInViewportSettings&gt;</span>
-2. <span class="_name">whenNearViewport</span><span class="_default">[object Object]</span> <span class="_type">Partial&lt;IWhenNearViewportSettings&gt;</span>
-3. <span class="_name">whenEntersViewport</span><span class="_default">[object Object]</span> <span class="_type">Partial&lt;IWhenEntersViewportSettubgs&gt;</span>
-4. <span class="_name">whenOutOfViewport</span><span class="_default">[object Object]</span> <span class="_type">Partial&lt;IWhenOutOfViewportSettings&gt;</span>
-5. <span class="_name">whenInteract</span><span class="_default">[object Object]</span> <span class="_type">Partial&lt;IWhenInteractSettings&gt;</span>
-6. <span class="_name">whenVisible</span><span class="_default">[object Object]</span> <span class="_type">Partial&lt;IWhenVisibleSettings&gt;</span>
-7. <span class="_name">whenStylesheetsReady</span><span class="_default">[object Object]</span> <span class="_type">Partial&lt;IWhenStyleSheetsReadySettings&gt;</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">whenInViewport</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Partial&lt;IWhenInViewportSettings&gt;</span>
+<p class="_description">Some settings for the whenInViewport function</p>
+</li>
+<li class="_item">
+<span class="_name">whenNearViewport</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Partial&lt;IWhenNearViewportSettings&gt;</span>
+<p class="_description">Some settings for the whenNearViewport function</p>
+</li>
+<li class="_item">
+<span class="_name">whenEntersViewport</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Partial&lt;IWhenEntersViewportSettubgs&gt;</span>
+<p class="_description">Some settings for the whenEntersViewport function</p>
+</li>
+<li class="_item">
+<span class="_name">whenOutOfViewport</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Partial&lt;IWhenOutOfViewportSettings&gt;</span>
+<p class="_description">Some settings for the whenOutOfViewport function</p>
+</li>
+<li class="_item">
+<span class="_name">whenInteract</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Partial&lt;IWhenInteractSettings&gt;</span>
+<p class="_description">Some settings for the whenInteract function</p>
+</li>
+<li class="_item">
+<span class="_name">whenVisible</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Partial&lt;IWhenVisibleSettings&gt;</span>
+<p class="_description">Some settings for the whenVisible function</p>
+</li>
+<li class="_item">
+<span class="_name">whenStylesheetsReady</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Partial&lt;IWhenStyleSheetsReadySettings&gt;</span>
+<p class="_description">Some settings for the whenStylesheetsReady function</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

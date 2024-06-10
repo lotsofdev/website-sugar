@@ -31,7 +31,7 @@ author: '{"name":"Olivier Bossel","email":"olivier.bossel@gmail.com"}'
 <p class="_description">A callback function to call at each interval</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IEaseIntervalSettings</span>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IEaseIntervalSettings</span>
 <p class="_description">Some settings to customize your interval process</p>
 </li>
 </ol>
@@ -57,10 +57,24 @@ await __easeInterval(2000, (easedPercent) => {
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">inteval</span><span class="_default">40</span> <span class="_type">Number</span>
-2. <span class="_name">easing</span><span class="_default">easeInOutQuart</span> <span class="_type">Function</span>
-3. <span class="_name">from</span><span class="_default">0</span> <span class="_type">Number</span>
-4. <span class="_name">to</span><span class="_default">100</span> <span class="_type">Number</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">inteval</span><span class="_default">40</span> <span class="_type">Number</span>
+<p class="_description">An interval in ms to call your callback function</p>
+</li>
+<li class="_item">
+<span class="_name">easing</span><span class="_default">easeInOutQuart</span> <span class="_type">Function</span>
+<p class="_description">An easing function that take as parameter a value between 0 and 1</p>
+</li>
+<li class="_item">
+<span class="_name">from</span><span class="_default">0</span> <span class="_type">Number</span>
+<p class="_description">The value to start with</p>
+</li>
+<li class="_item">
+<span class="_name">to</span><span class="_default">100</span> <span class="_type">Number</span>
+<p class="_description">The value to end with</p>
+</li>
+</ol>
 </div>
 <div class="_author">
 ## Author

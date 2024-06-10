@@ -28,7 +28,7 @@ You can specify what you want to take care of using the settings object
 <p class="_description">The path you want to check</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IExistsSettings</span>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IExistsSettings</span>
 <p class="_description">Some settings for what you want to take care of</p>
 </li>
 </ol>
@@ -50,9 +50,20 @@ __existsSync('/something/cool.txt'); // => true
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">directory</span><span class="_default">true</span> <span class="_type">Boolean</span>
-2. <span class="_name">file</span><span class="_default">true</span> <span class="_type">Boolean</span>
-3. <span class="_name">symlink</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">directory</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to take care of directories</p>
+</li>
+<li class="_item">
+<span class="_name">file</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to take care of files</p>
+</li>
+<li class="_item">
+<span class="_name">symlink</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to take care of symlinks</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

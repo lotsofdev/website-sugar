@@ -33,7 +33,7 @@ all values with the path that matches the passed glob pattern.
 <p class="_description">The dotted object path to get</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">Object</span>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Object</span>
 <p class="_description">A settings object to configure your glob get process</p>
 </li>
 </ol>
@@ -59,7 +59,12 @@ __getGlob({
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">deepize</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">deepize</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want the result object to be deepized using the ```deepize``` sugar function</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

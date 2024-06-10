@@ -27,7 +27,7 @@ Transform the passed multiple level object into a single level one
 <p class="_description">The object to flatten</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">Object</span>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Object</span>
 <p class="_description">An object of settings to configure your flatten process</p>
 </li>
 </ol>
@@ -53,11 +53,28 @@ __flatten({
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">separation</span><span class="_default">.</span> <span class="_type">String</span>
-2. <span class="_name">array</span><span class="_default">false</span> <span class="_type">Boolean</span>
-3. <span class="_name">quoteSeparatedProperties</span><span class="_default">true</span> <span class="_type">Boolean</span>
-4. <span class="_name">quoteCharacter</span><span class="_default">"</span> <span class="_type">String</span>
-5. <span class="_name">keepLastIntact</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">separation</span><span class="_default">&period;</span> <span class="_type">String</span>
+<p class="_description">The separation character to use for preperty names</p>
+</li>
+<li class="_item">
+<span class="_name">array</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to flatten array or not</p>
+</li>
+<li class="_item">
+<span class="_name">quoteSeparatedProperties</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to quote dotted properties to be able to restore them correctly later</p>
+</li>
+<li class="_item">
+<span class="_name">quoteCharacter</span><span class="_default">&quot;</span> <span class="_type">String</span>
+<p class="_description">Specify the quote character to use when need to quote separated properties</p>
+</li>
+<li class="_item">
+<span class="_name">keepLastIntact</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to keep the last level (object, array) intact and not to flatten each properties</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

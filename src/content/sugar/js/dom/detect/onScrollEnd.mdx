@@ -28,8 +28,8 @@ author: '{"name":"Olivier Bossel","email":"olivier.bossel@gmail.com","url":"http
 <p class="_description">The function to call when scroll end is detected</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IOnScrollEndSettings</span>
-<p class="_description">Some settings like offset, etc...</p>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IOnScrollEndSettings</span>
+<p class="_description">Some settings like offset&comma; etc&period;&period;&period;</p>
 </li>
 </ol>
 </div>
@@ -46,9 +46,20 @@ __onScrollEnd($elm, () => {
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">offset</span><span class="_default">20</span> <span class="_type">Number</span>
-2. <span class="_name">once</span><span class="_default">false</span> <span class="_type">boolean</span>
-3. <span class="_name">times</span><span class="_default">-1</span> <span class="_type">number</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">offset</span><span class="_default">20</span> <span class="_type">Number</span>
+<p class="_description">An offset to detect earlier the end of the scroll</p>
+</li>
+<li class="_item">
+<span class="_name">once</span><span class="_default">false</span> <span class="_type">boolean</span>
+<p class="_description">true if you want to detect the scroll end just once</p>
+</li>
+<li class="_item">
+<span class="_name">times</span><span class="_default">-1</span> <span class="_type">number</span>
+<p class="_description">Specify a number of times to detect the scroll end</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

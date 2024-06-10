@@ -31,8 +31,8 @@ Allows you to crop a string at a certain length (this length take care of the cr
 <p class="_description">The text length to have after the croping process</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">Object</span>
-<p class="_description">An object of settings described bellow:</p>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Object</span>
+<p class="_description">An object of settings described bellow&colon;</p>
 </li>
 </ol>
 </div>
@@ -53,8 +53,16 @@ __crop('Hello World', 10); // => Hello w...
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">chars</span><span class="_default">...</span> <span class="_type">String</span>
-2. <span class="_name">splitWords</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">chars</span><span class="_default">&period;&period;&period;</span> <span class="_type">String</span>
+<p class="_description">The characters to use to signal the crop</p>
+</li>
+<li class="_item">
+<span class="_name">splitWords</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to split words or not. If not, the function will make sure the final text does not exceeds the wanted length</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo

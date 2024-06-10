@@ -29,7 +29,7 @@ you want to transform items in hashes and compare that instead.
 <p class="_description">The arrays you want to compare</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">Object</span>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">Object</span>
 <p class="_description">Some settings to refine your comparaison process</p>
 </li>
 </ol>
@@ -51,8 +51,16 @@ __intersection([1,2,3,4], [1,3,5]); // => [1,3]
 </div>
 <div class="_settings">
 ## Settings
-1. <span class="_name">references</span><span class="_default">true</span> <span class="_type">Boolean</span>
-2. <span class="_name">hash</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<ol class="_list">
+<li class="_item">
+<span class="_name">references</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to use the references comparaison or not</p>
+</li>
+<li class="_item">
+<span class="_name">hash</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to allows transforming object etc in to hashes and compare this instead</p>
+</li>
+</ol>
 </div>
 <div class="_author">
 ## Author

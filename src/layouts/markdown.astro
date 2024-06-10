@@ -1,0 +1,62 @@
+---
+interface Props {
+  title: string;
+}
+
+import '@fontsource/sixtyfour';
+import '@fontsource/vt323';
+import '../components/index.css';
+
+import InternalNav from '@lotsof/website-common/src/components/internalNav/internalNav.astro';
+import LoHeader from '../components/header/header.astro';
+import LoCrt from '@lotsof/website-common/src/components/crt/crt.astro';
+import LoSearch from '../components/search/search.astro';
+import LoFooter from '@lotsof/website-common/src/components/footer/footer.astro';
+
+import __pictoNewNTasta from '../img/picto-new-n-tasty.svg?raw';
+
+import { ViewTransitions, fade } from 'astro:transitions';
+
+// import '../components/_/sugarcss.css';
+// import.meta.glob('../**/*.css');
+
+const { title } = Astro.props;
+---
+
+<script>
+  import '../components/index';
+
+  document.addEventListener('astro:page-load', () => {
+    if (document.location.pathname === '/') {
+      document.body.classList.add('-home');
+    } else {
+      document.body.classList.remove('-home');
+    }
+  });
+</script>
+
+<html lang="en" transition:animate={fade({ duration: '0.1s' })}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- <link rel="stylesheet" href="/src/css/index.css" /> -->
+    <!-- <script type="module" src="/src/components/index.ts" defer></script> -->
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <LoHeader />
+    <main class="lo-main">
+      <div class="lo-markdown typo-format typo-rhythm">
+        <slot />
+      </div>
+    </main>
+    <InternalNav />
+    <LoFooter />
+    <LoSearch />
+    <LoCrt />
+  </body>
+</html>

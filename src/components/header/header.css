@@ -36,7 +36,7 @@
     top: 0;
     left: 50%;
     width: 100vw;
-    height: 200px;
+    height: 150px;
     transform: translateX(-50%);
     @s-transition();
   }
@@ -45,7 +45,7 @@
     background: s-color(main, background);
     background: linear-gradient(
       to bottom,
-      s-color(accent, background) 40%,
+      s-color(main, background) 40%,
       transparent 100%
     );
   }

@@ -17,7 +17,7 @@ author: '{"name":"Olivier Bossel","email":"olivier.bossel@gmail.com","url":"http
 </div>
 <div class="_namespace">@lotsof.sugar.node.composer</div>
 <div class="_description">
-This function simply take a package name as parameter, and return the corresponding
+This function simply take a package name (or &quot;.&quot; for the current package) as parameter, and return the corresponding
 composer.json JSON content
 </div>
 <div class="_params">
@@ -28,7 +28,7 @@ composer.json JSON content
 <p class="_description">the package name or path wanted</p>
 </li>
 <li class="_item">
-<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IPackageJson</span>
+<span class="_name">settings</span><span class="_default">&lsqb;object Object&rsqb;</span> <span class="_type">IComposerVendorDirSettings</span>
 <p class="_description">Some settings to configure your process</p>
 </li>
 </ol>
@@ -37,7 +37,7 @@ composer.json JSON content
 ## Return
 <ol class="_list">
 <li class="_item">
-<span class="_description">The package.json content</span><span class="_default"></span><span class="_type">JSON</span>
+<span class="_description">The composer.json content</span><span class="_default"></span><span class="_type">JSON</span>
 </li>
 </ol>
 </div>
@@ -45,8 +45,25 @@ composer.json JSON content
 ## Example
 ```js
 import { __composerJsonSync } from '@lotsof/sugar/composer`;
-__composerJsonSync('lodash');
+__composerJsonSync('lotsof/sugar');
 ```
+</div>
+<div class="_settings">
+## Settings
+<ol class="_list">
+<li class="_item">
+<span class="_name">cwd</span><span class="_default">&sol;Users&sol;olivier&sol;data&sol;web&sol;lotsof&sol;monorepo&sol;packages&sol;sugar</span> <span class="_type">String</span>
+<p class="_description">The directory in which you want to start the research</p>
+</li>
+<li class="_item">
+<span class="_name">monorepo</span><span class="_default">false</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you are in a monorepo context</p>
+</li>
+<li class="_item">
+<span class="_name">checkExistence</span><span class="_default">true</span> <span class="_type">Boolean</span>
+<p class="_description">Specify if you want to check if the vendor dir exists</p>
+</li>
+</ol>
 </div>
 <div class="_todo">
 ## Todo
